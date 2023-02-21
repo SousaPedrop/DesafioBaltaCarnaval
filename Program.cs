@@ -22,35 +22,37 @@ void Menu()
     // Console.WriteLine("7 - Aguardando...");
     Console.WriteLine("0 - Encerrar programa \n");
 
-    int escolha = int.Parse(Console.ReadLine());
-
-    switch (escolha)
+    if (int.TryParse(Console.ReadLine(), out int escolha))
     {
-        case 0:
-            Console.WriteLine("Encerrando o programa...");
-            exibirMenu = false;
-            break;
-        case 1:
-            PrimeiroDia.ContarLetrasEPalavras();
-            break;
-        case 2:
-            SegundoDia.CalcularIMC();
-            break;
-        case 3:
-            TerceiroDia.EscolherGasolinaOuAlcool();
-            break;
-        case 4:
-            QuartoDia.PassarTroco();
-            break;
-        // case 5: System.Console.WriteLine("Aguardando...");
-        //         break;
-        // case 6: System.Console.WriteLine("Aguardando...");
-        //         break;
-        // case 7: System.Console.WriteLine("Aguardando...");
-        //         break;
-        default:
-            Console.WriteLine("Por favor, escolher uma das opções válidas");
-            Console.ReadKey();
-            break;
+        switch (escolha)
+        {
+            case 0:
+                Console.WriteLine("Encerrando o programa...");
+                exibirMenu = false;
+                break;
+            case 1:
+                PrimeiroDia.ContarLetrasEPalavras();
+                break;
+            case 2:
+                SegundoDia.CalcularIMC();
+                break;
+            case 3:
+                TerceiroDia.EscolherGasolinaOuAlcool();
+                break;
+            case 4:
+                QuartoDia.PassarTroco();
+                break;
+            // case 5: System.Console.WriteLine("Aguardando...");
+            //         break;
+            // case 6: System.Console.WriteLine("Aguardando...");
+            //         break;
+            // case 7: System.Console.WriteLine("Aguardando...");
+            //         break;
+            default:
+                Console.WriteLine("Por favor, escolher uma das opções válidas");
+                Console.ReadKey();
+                break;
+        }
     }
 }
+

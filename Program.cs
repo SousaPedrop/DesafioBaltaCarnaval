@@ -17,8 +17,8 @@ void Menu()
     Console.WriteLine("2 - Calcular IMC.");
     Console.WriteLine("3 - Escolher entre gasolina ou álcool.");
     Console.WriteLine("4 - Calcular troco.");
-    // Console.WriteLine("5 - Aguardando...");
-    // Console.WriteLine("6 - Aguardando...");
+    Console.WriteLine("5 - Descobrir valor por extenso.");
+    Console.WriteLine("6 - Encriptar texto.");
     // Console.WriteLine("7 - Aguardando...");
     Console.WriteLine("0 - Encerrar programa \n");
 
@@ -42,10 +42,12 @@ void Menu()
             case 4:
                 QuartoDia.PassarTroco();
                 break;
-            // case 5: System.Console.WriteLine("Aguardando...");
-            //         break;
-            // case 6: System.Console.WriteLine("Aguardando...");
-            //         break;
+            case 5:
+                QuintoDia.ValorPorExtenso();
+                break;
+            case 6:
+                SextoDia.EncriptarTexto();
+                break;
             // case 7: System.Console.WriteLine("Aguardando...");
             //         break;
             default:

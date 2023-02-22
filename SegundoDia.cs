@@ -16,7 +16,7 @@ namespace DesafioBaltaCarnaval
             if (peso > 0 && altura > 0)
             {
                 double Imc = peso / Math.Pow(altura, 2);
-                Console.WriteLine($"Seu IMC é: {Imc.ToString("N")}");
+                Console.WriteLine($"Seu IMC é: {Imc.ToString("N2")}");
                 if (Imc >= 25 && Imc <= 29.9)
                 {
                     Console.WriteLine($"Sobrepeso");

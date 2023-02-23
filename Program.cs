@@ -19,7 +19,7 @@ void Menu()
     Console.WriteLine("4 - Calcular troco.");
     Console.WriteLine("5 - Descobrir valor por extenso.");
     Console.WriteLine("6 - Encriptar texto.");
-    // Console.WriteLine("7 - Aguardando...");
+    Console.WriteLine("7 - Visualizar pirâmide de Fibonacci.");
     Console.WriteLine("0 - Encerrar programa \n");
 
     if (int.TryParse(Console.ReadLine(), out int escolha))
@@ -48,8 +48,9 @@ void Menu()
             case 6:
                 SextoDia.EncriptarTexto();
                 break;
-            // case 7: System.Console.WriteLine("Aguardando...");
-            //         break;
+            case 7:
+                SetimoDia.PiramideFibonacci();
+                break;
             default:
                 Console.WriteLine("Por favor, escolher uma das opções válidas");
                 Console.ReadKey();

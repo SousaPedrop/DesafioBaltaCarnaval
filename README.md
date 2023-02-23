@@ -9,7 +9,7 @@ Todas as soluções foram feitas usando a linguagem C#
 
 ✅ - Desafio 03: criar um programa que, dado o valor da gasolina e do etanol, diga qual dos dois compensa mais ser utilizado.
 
-⬜ - Desafio 04: criar um programa que informa o troco a ser recebido pelo cliente.
+✅ - Desafio 04: criar um programa que informa o troco a ser recebido pelo cliente.
 ```
   Ex: 
  - Valor da compra: R$ 328,00
@@ -29,4 +29,14 @@ Todas as soluções foram feitas usando a linguagem C#
   Ex: 
   Input: andre
   Output: KJATL
+```
+⬜ - Desafio 07: criar um programa que imprime uma pirâmide na tela, apenas com os números da sequência de Fibonacci.
+```
+  1  
+  1 1 
+  1 1 2 
+  1 1 2 3
+  1 1 2 3 5 
+  1 1 2 3 5 8
+  1 1 2 3 5 8 13
 ```

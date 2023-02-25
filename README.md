@@ -24,13 +24,13 @@ Todas as soluções foram feitas usando a linguagem C#
   Ex: 
   325 = TREZENTOS E VINTE E CINCO
 ```
-⬜ - Desafio 06: criar um programa que encripta um texto usando uma tabela de mapeamento de caracteres.
+✅ - Desafio 06: criar um programa que encripta um texto usando uma tabela de mapeamento de caracteres.
 ```
   Ex: 
   Input: andre
   Output: KJATL
 ```
-⬜ - Desafio 07: criar um programa que imprime uma pirâmide na tela, apenas com os números da sequência de Fibonacci.
+✅ - Desafio 07: criar um programa que imprime uma pirâmide na tela, apenas com os números da sequência de Fibonacci.
 ```
   1  
   1 1 

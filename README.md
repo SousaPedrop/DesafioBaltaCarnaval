@@ -1,6 +1,6 @@
 # DesafioBaltaCarnaval
 
-Este repositório foi criado para armazenar os códigos de soluções para os desafios de carnaval propostos na Comunidade Balta.io
+Este repositório foi criado para armazenar os códigos de soluções para os desafios de carnaval propostos na Comunidade Balta.io <br>
 Todas as soluções foram feitas usando a linguagem C#
 
 ✅ - Desafio 01: criar um programa que conte a quantidade de caracteres e de palavras de uma determinada entrada.
@@ -19,7 +19,7 @@ Todas as soluções foram feitas usando a linguagem C#
     - 2 notas de 10 reais
     - 1 nota de 50 reais
 ```
-⬜ - Desafio 05: criar um programa que informa o valor por extenso.
+✅ - Desafio 05: criar um programa que informa o valor por extenso.
 ```
   Ex: 
   325 = TREZENTOS E VINTE E CINCO

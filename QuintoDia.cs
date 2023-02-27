@@ -18,17 +18,20 @@ namespace DesafioBaltaCarnaval
             else
             {
                 string valorExtenso = "";
-                int largura = valor.Length;
                 int valorInteiro = int.Parse(valor);
 
-                if (largura <= 3)
+                if (valorInteiro <= 999)
                 {
                     valorExtenso += valorInteiro.PegarExtenso();
                 }
-                else if (largura > 3 && largura < 7)
+                else if (valorInteiro > 999 && valorInteiro <= 99999)
                 {
                     valorExtenso += (valorInteiro / 1000).PegarExtenso();
                     valorExtenso += " MIL ";
+                    if(valor.Contains("00") && !(valor.EndsWith("000")))
+                    {
+                        valorExtenso += "E ";
+                    }
                     valorExtenso += (valorInteiro % 1000).PegarExtenso();
                 }
 
@@ -53,6 +56,10 @@ namespace DesafioBaltaCarnaval
             {
                 return "CEM";
             }
+            if (valor == 1)
+            {
+                return "UM";
+            }
             for (int i = 0; i < 3; i++)
             {
                 indice = valor / divisor;
@@ -68,7 +75,7 @@ namespace DesafioBaltaCarnaval
                 {
                     if (extenso == "" || dezenas[indice] == "")
                     {
-                        extenso += $"{dezenas[indice]} ";
+                        extenso += $"{dezenas[indice]}";
                     }
                     else
                     {
@@ -79,11 +86,11 @@ namespace DesafioBaltaCarnaval
                 }
                 else
                 {
-                    if (String.IsNullOrWhiteSpace(extenso) || unidades[indice] == "")
+                    if ((String.IsNullOrWhiteSpace(extenso) || unidades[indice] == "") && (indice > 1))
                     {
                         extenso += unidades[indice];
                     }
-                    else
+                    else if(divisor == 1 && indice != 0)
                     {
                         extenso += " E ";
                         extenso += unidades[indice];

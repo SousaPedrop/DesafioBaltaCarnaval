@@ -28,8 +28,8 @@ namespace DesafioBaltaCarnaval
                 }
                 Console.WriteLine();
                 Console.WriteLine($"O texto digitado possui {NumeroDeCaracteres} caracteres e {NumeroDePalavras} palavras.");
-                Console.ReadKey();
             }
+            Console.ReadKey();
         }
     }
 }

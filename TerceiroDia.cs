@@ -18,11 +18,11 @@ namespace DesafioBaltaCarnaval
                 double comparacao = PrecoEtanol / PrecoGasolina;
                 if (comparacao > 0.65)
                 {
-                    Console.WriteLine("É mais vantajoso abastercer com Alcool/Etanol.");
+                    Console.WriteLine("É mais vantajoso abastecer com Alcool/Etanol.");
                 }
                 else
                 {
-                    Console.WriteLine("É mais vantajoso abastercer com Gasolina."); 
+                    Console.WriteLine("É mais vantajoso abastecer com Gasolina."); 
                 }
             }
             Console.ReadKey();
